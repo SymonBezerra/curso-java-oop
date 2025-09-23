@@ -114,6 +114,8 @@ O que diferencia um tipo de dado de outro é o seu tamanho em *bytes*, ou seja, 
 - Valor lógico, `boolean`
 - Textos, `String`
 
+### Bônus: o valor *null*
+
 ## 1.3 Estruturas Condicionais
 
 Conhecendo agora nossos primeiros tipos de dados, principalmente o tipo booleano, podemos começar a entender estruturas condicionais, a saber, as palavras-chave `if` e `else` ("se" e "caso contrário").
