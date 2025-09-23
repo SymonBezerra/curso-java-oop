@@ -1,5 +1,4 @@
-# Capítulo 1
-## Introdução ao Java
+# Capítulo 1 - Introdução ao Java
 
 Seja bem vindo ao nosso curso da linguagem de programação Java. Nesse primeiro capítulo, você aprenderá sobre as estruturas básicas da linguagem, desde o seu primeiro programa até criar funções.
 
