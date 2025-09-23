@@ -24,6 +24,15 @@ O paradigma de orientação a objetos, mesmo que não seja perfeito, oferece alg
 
 ## 2.2 Os Quatro Pilares
 
+A POO é definida em quatro pilares:
+
+1. Abstração: é possível definir unidades de código abstratas, isto é, não é necessário conhecer a implementação subjacente de um objeto para utilizá-lo. Isto torna os objetos mais utilizáveis e fáceis de realizar manutenção.
+2. Encapsulamento: é possível definir variáveis e funções completa ou parcialmente isoladas do mundo externo, isto é, inacessíveis em outros lugares do código.
+3. Herança: é possível definir tipos compostos que são subtipos de outros objetos, reaproveitando boa parte do código já implementado.
+4. Polimorfismo: ao mesmo tempo que é possível reaproveitar código, é possível modificar o código reaproveitado.
+
+Neste capítulo, falaremos mais sobre o pilar da Abstração, e nos capítulos seguintes, detalharemos os conceitos sobre os demais pilares.
+
 ## 2.3 Abstração
 
 Antes, precisamos introduzir o conceito de **objeto**. O que é um objeto? Vimos no capítulo anterior que o Java possui tipos primitivos - sendo que `String` não é um deles. Um objeto é um tipo composto que encapsula variáveis e funções em uma mesma unidade computacional. Todo o nosso mundo, de agora em diante, será guiado por objetos. Pensemos um exemplo simples: um objeto `Carro`. Um carro possui uma marca, modelo e ano de fabricação - estes seriam seus atributos. Alguns comportamentos do objeto `Carro`, isto é, uma função do objeto `Carro` seria ligar, acelerar, freiar e desligar.
