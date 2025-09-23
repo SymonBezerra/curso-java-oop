@@ -83,7 +83,7 @@ Esta linha, com a palavra chave `new`, chama diretamente o método construtor. O
 public class Carro {
     public String marca;
     public String modelo;
-    public int anoFabricacao;
+    public int anoFabricacao = 1900; // valor predefinido, por padrão é null
 
     public Carro(String marca, String modelo, int anoFabricacao) {
         this.marca = marca;
@@ -135,5 +135,50 @@ public class Carro { // esta é a definição de `Carro`, a CLASSE
 > Ainda sobre o `this`: no Java, `this` é, na maioria dos casos, **opcional**. Por exemplo, no exemplo do método `printAno`, não seria necessário usar `this.anoFabricacao`. Ele é apenas obrigatório quando há ambiguidade, ou seja, quando chamamos um método com argumentos de nomes iguais aos atributos, como no caso do construtor que definimos, onde há uma variável do método de mesmo nome para cada atributo. Para evitar o uso de `this`, poderíamos usar outros nomes para os argumentos do construtor.
 
 Tudo o que vimos até agora define também o conceito do pilar de Abstração da POO: abstrair significa criar unidades reutilizáveis de código cuja definição não precisa ser conhecida a fundo para ser utilizada (o que muitas vezes é necessário no mundo procedural). Como primeiro exercício, experimente criar agora um tipo `Carta` (carta de baralho), tente definir seus atributos, seu construtor e um método `mostrarCarta`.
+
+## Bônus: o tipo *enum*
+
+Existe um objeto especial no Java e em outras linguagens, o enumerador ou `enum`. Ele é um objeto de um ou mais atributos, cujo construtor é privado, ou seja, possui instâncias já predefinidas.
+
+Vejamos um exemplo:
+
+```java
+public enum Naipe {
+    /*
+        Todo enum possui um valor ordinal,
+        que começa a partir de zero e é atribuído
+        a partir da ordem que as enumerações são destacadas.
+    */
+    OUROS, // 0
+    ESPADAS, // 1
+    COPAS, // 2
+    PAUS; // 3
+}
+```
+
+É possível definir atributos para um `enum`, porém todos eles são `final` (constantes):
+
+```java
+public enum Naipe {
+    OUROS("Mole"),
+    ESPADAS("Espadilha"),
+    COPAS("Copeta"),
+    PAUS("Zap");
+
+    public final String apelido;
+
+    private Naipe(String apelido) {
+        this.apelido = apelido;
+    }
+}
+```
+
+Alguns métodos para o nosso `enum`:
+
+```java
+Naipe n = Naipe.OUROS;
+System.out.println(n.apelido); // Mole
+System.out.println(n.ordinal()); // 0
+```
 
 ## Exercícios
