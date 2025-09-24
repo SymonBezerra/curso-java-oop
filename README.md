@@ -19,6 +19,6 @@ Abaixo se encontra o sumário do nosso curso.
 6. Classes abstratas
 7. Interfaces
 8. Tratamento de exceções
-9. Próximos passos
+9. Conclusão
 
 Parafraseando o lema do Java: **aprenda uma vez, e execute em qualquer lugar!**

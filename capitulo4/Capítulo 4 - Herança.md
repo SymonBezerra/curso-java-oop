@@ -145,4 +145,30 @@ Digamos que o método `usarCintoDeSeguranca` estivesse definido em `Veiculo`. Se
 
 É por isso que existe o próximo pilar da POO, o polimorfismo, que nos permite alterar comportamentos e atributos da superclasse dentro de uma subclasse para melhor adequá-los às mesmas. Também veremos maneiras mais avançadas de implementar polimorfismo nos capítulos seguintes.
 
+## Bônus: o modificador `protected`
+
+Há algo que não abordamos ainda aqui: o que acontece quando misturamos encapsulamento com herança? Atributos e métodos privados não são visíveis, ou seja, não podem ser acessados, por subclasses. Ou seja, não seria possível acessar nenhum dos atributos que definimos na classe `Veiculo` dentro da classe `Carro`, apenas através dos métodos públicos que já foram definidos na superclasse.
+
+É aí que entra o modificador `protected`, um terceiro encapsulador: quando um atributo ou método é `protected`, ele não pode ser acessado publicamente, mas é visível para todas as superclasses. No nosso caso, faria sentido definir a classe `Veiculo` da seguinte maneira:
+
+```java
+public class Veiculo {
+    protected TipoVeiculo tipo;
+    protected String marca;
+    protected String modelo;
+    protected int anoFabricacao;
+    protected int velocidade = 0;
+    protected boolean ligado = false;
+
+    // restante da classe
+}
+
+public class Carro extends Veiculo {
+    public void consulta() {
+        // sem o protected, esta linha não compila
+        System.out.println("Modelo: " + marca + " " + modelo + " " + ano);
+    }
+}
+```
+
 ## Exercícios
