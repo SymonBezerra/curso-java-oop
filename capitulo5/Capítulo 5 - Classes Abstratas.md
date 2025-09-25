@@ -61,6 +61,21 @@ public abstract class Veiculo { // para definir métodos abstratos, a classe tam
 
 Para termos métodos abstratos, toda a classe deve ser também uma **classe abstrata**, isto é, **uma classe que não pode ser instanciada**. Pensando bem, ninguém faria uma instância de `Veiculo` que não fosse um `Carro`. Então, o que faremos com uma classe abstrata? Só podemos instanciar subclasses dela. Daí vem o nome *classe abstrata de base* (sigla em inglês, ABC).
 
-No entanto, veremos ainda no próximo capítulo um outro tipo de classe abstrata, que consegue ultrapassar o limite da herança única: a **interface**.
+> Um método abstrato deve ser **obrigatoriamente** sobrecarregado nas subclasses!
+
+Vejamos como fica a implementação da subclasse `Carro`:
+
+```java
+public class Carro extends Veiculo {
+    @Override // sobrecarga obrigatória
+    public String getTipoMotor() {
+        return "Motor de Carro";
+    }
+}
+```
+
+O padrão de ABCs pode ser utilizado quando temos alguns comportamentos específicos apenas às subclasses, mas que são padronizados em todos os tipos que herdam da superclasse.
+
+Veremos ainda no próximo capítulo um outro tipo de classe abstrata, que consegue ultrapassar o limite da herança única: a **interface**.
 
 ## Exercícios
