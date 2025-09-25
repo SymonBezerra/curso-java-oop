@@ -1,4 +1,4 @@
-# Capítulo 3 - Encapsulamento
+# Capítulo 2 - Encapsulamento
 
 Aprendemos o primeiro dos quatro pilares da POO, a abstração, no capítulo anterior. Provavelmente você já se perguntou algumas vezes porque utilizamos a palavra-chave `public`, que sempre aparece nos *snippets* de código de Java desde o *Hello, World*. Esta palavra-chave diz respeito ao pilar que estudaremos neste capítulo, o encapsulamento.
 
@@ -9,13 +9,13 @@ O presente capítulo está estruturado da seguinte maneira:
 3. Getters e setters
 4. Uma crítica ao encapsulamento
 
-## 3.1 Introdução
+## 2.1 Introdução
 
 Uma das maiores dificuldades de refatorar qualquer código imperativo (o que inclui tanto programação procedural como POO) é o chamado **estado compartilhado** (ou em inglês, *shared state*): diferentes variáveis e objetos (estado/*state*) são compartilhados por diferentes pontos do código, e sem uma manutenção adequada, o nosso código não terá uma manutenção fácil. Isso acontece com mais facilidade em código procedural, onde não há uma regra firme para *encapsular*, ou seja, restringir o acesso ao estado do nosso código.
 
 O pilar de encapsulamento define que alguns atributos e funções podem e devem ser restringidos, para garantir um código mais simples e previsível. Atributos que são irrestritos são chamados de **públicos**, e atributos restritos são chamados de **privados**.
 
-## 3.2 Atributos públicos e privados
+## 2.2 Atributos públicos e privados
 
 Até agora, só definimos atributos públicos através da palavra-chave `public`. Atributos públicos podem ser acessados a qualquer momento e podem também ser redefinidos sem restrições. Vamos utilizar como exemplo nesse capítulo uma classe `Documento`.
 
@@ -100,7 +100,7 @@ public class Documento {
 
 O intuito do encapsulamento não é simplesmente restringir o acesso a atributos, mas sim definir regras explícitas para o seu uso. Sendo assim, como podemos fazer para definir um atributo encapsulado, mas que podemos ter acesso?
 
-## 3.3 Getters e setters
+## 2.3 Getters e setters
 
 É aí que entram dois tipos de métodos especiais: *getters* e *setters*. Eles são métodos públicos que permitem regular o acesso de leitura e escrita a atributos encapsulados. Vejamos no exemplo abaixo:
 
@@ -156,7 +156,7 @@ Quando devemos utilizar *getters* e *setters*? Utilizando o princípio da abstra
 
 Mesmo com a enorme potencialidade de refatoração e manutenção de código possibilitados pelo pilar de encapsulamento, há algumas críticas muito pertinentes a serem feitas.
 
-## 3.4 Uma crítica ao encapsulamento
+## 2.4 Uma crítica ao encapsulamento
 
 Nos últimos anos, o paradigma de POO vem sendo duramente criticado por ter gerado problemas de refatoração tão significativos quanto os que ele tentou resolver ao propor-se como alternativa à programação procedural. Uma das críticas é justamente por conta do excesso de código (*boilerplate*) gerado por vários *getters* e *setters* que, se pararmos para pensar, são praticamente equivalentes a um atributo público.
 

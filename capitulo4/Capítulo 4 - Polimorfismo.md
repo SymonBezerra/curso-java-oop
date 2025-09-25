@@ -1,4 +1,4 @@
-# Capítulo 5 - Polimorfismo
+# Capítulo 4 - Polimorfismo
 
 Vimos no capítulo anterior que, ao mesmo tempo que possui muitos prós, o pilar de herança traz consigo muitos contras que precisam ser levados em conta. Uma das maneiras de contornar estes problemas é justamente através do quarto e último pilar: o polimorfismo.
 
@@ -8,11 +8,11 @@ O presente capítulo está estruturado da seguinte forma:
 2. Sobrecarga de métodos
 3. Alternativas avançadas
 
-## 5.1 Introdução
+## 4.1 Introdução
 
 Vimos que a herança apresenta um problema fundamental: trazer consigo comportamentos em excesso, e que ela deve ser usada com sabedoria. Uma das soluções que o Java apresenta é não permitir herança de múltiplas classes (o que é permitido em classes como C++ e Python). No entanto, a própria POO oferece também uma "solução", ou melhor, um incremento à herança: o pilar do polimorfismo (do grego, muitas formas).
 
-## 5.2 Sobrecarga de métodos
+## 4.2 Sobrecarga de métodos
 
 Voltemos ao exemplo da classe `Carro` e sua superclasse `Veículo`. Vemos que os prints estão dizendo: "Veículo realiza" tal ação. E se quiséssemos que, por padrão, o `Carro` dissesse "Carro" ao invés de "Veículo". Uma das formas de se alcançar este comportamento é através da **sobrecarga de métodos**.
 
@@ -119,7 +119,7 @@ public class Carro extends Veiculo {
 }
 ```
 
-## 5.3 Alternativas avançadas
+## 4.3 Alternativas avançadas
 
 Apenas a sobrecarga de métodos não funciona. Em teoria, poderíamos passar um método vazio, mas isso não seria suficiente: alguém poderia simplesmente esquecer de sobrecarregá-lo. Talvez precisemos de algo mais... *abstrato* ainda. É aí que entram as *abstract base class* (classes abstratas de base), ou ABCs. Veremos mais sobre elas no próximo capítulo.
 

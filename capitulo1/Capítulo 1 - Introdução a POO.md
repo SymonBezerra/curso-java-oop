@@ -1,4 +1,4 @@
-# Capítulo 2 - Orientação a Objetos
+# Capítulo 1 - Orientação a Objetos
 
 Muito bem, você concluiu os seus primeiros passos na linguagem Java. Você aprendeu como a linguagem Java é executada, os seus tipos de dados básicos, como declarar variáveis, estruturas condicionais, *loops*, como manipular *strings* e como escrever funções. Agora está na hora de aprender um pouco do paradigma que norteia toda a filosofia da linguagem Java: a orientação a objetos.
 
@@ -7,7 +7,7 @@ Muito bem, você concluiu os seus primeiros passos na linguagem Java. Você apre
 3. Abstração
 4. Métodos e atributos estáticos
 
-## 2.1 Introdução
+## 1.1 Introdução
 
 Vimos no capítulo anterior como organizarmos o nosso código em funções. Nos primórdios da programação, sequer elas existiam. Aos poucos surgiram as **subrotinas**, em linguagens como o BASIC (que foi muito popular nos computadores domésticos de 8 bits dos anos 70 e 80). No entanto, havia um pequeno problema: o código ainda contava com instruções muito similares às instruções de linguagens de máquina (*assembly*).
 
@@ -23,7 +23,7 @@ O mundo procedural foi extremamente importante e ainda é o paradigma principal 
 
 O paradigma de orientação a objetos, mesmo que não seja perfeito, oferece algumas soluções para isso. A programação orientada a objetos (doravante, POO) é um paradigma de programação que organiza o código em objetos - unidades que combinam dados e comportamentos relacionados em uma única estrutura coesa. Em essência, a POO transforma programas de uma coleção de funções processando dados soltos para um sistema de objetos colaborativos, onde cada um é responsável por seus próprios dados e comportamentos, tornando o código mais organizado, reutilizável e escalável.
 
-## 2.2 Os Quatro Pilares
+## 1.2 Os Quatro Pilares
 
 A POO é definida em quatro pilares:
 
@@ -34,7 +34,7 @@ A POO é definida em quatro pilares:
 
 Neste capítulo, falaremos mais sobre o pilar da Abstração, e nos capítulos seguintes, detalharemos os conceitos sobre os demais pilares.
 
-## 2.3 Abstração
+## 1.3 Abstração
 
 Antes, precisamos introduzir o conceito de **objeto**. O que é um objeto? Vimos no capítulo anterior que o Java possui tipos primitivos - sendo que `String` não é um deles. Um objeto é um tipo composto que encapsula variáveis e funções em uma mesma unidade computacional. Todo o nosso mundo, de agora em diante, será guiado por objetos. Pensemos um exemplo simples: um objeto `Carro`. Um carro possui uma marca, modelo e ano de fabricação - estes seriam seus atributos. Alguns comportamentos do objeto `Carro`, isto é, uma função do objeto `Carro` seria ligar, acelerar, freiar e desligar.
 
@@ -137,7 +137,7 @@ public class Carro { // esta é a definição de `Carro`, a CLASSE
 
 Tudo o que vimos até agora define também o conceito do pilar de Abstração da POO: abstrair significa criar unidades reutilizáveis de código cuja definição não precisa ser conhecida a fundo para ser utilizada (o que muitas vezes é necessário no mundo procedural). Como primeiro exercício, experimente criar agora um tipo `Carta` (carta de baralho), tente definir seus atributos, seu construtor e um método `mostrarCarta`.
 
-## 2.4 Métodos e atributos estáticos
+## 1.4 Métodos e atributos estáticos
 
 Agora que falamos sobre métodos e atributos, isto é, funções e variáveis que pertencem aos objetos, podemos finalmente responder a uma pergunta: o que significa o modificador `static`, do `public static void main`? Bom, `void main` é a definição da função. A palavra `public` será explicada no capítulo seguinte, sobre encapsulamento.
 

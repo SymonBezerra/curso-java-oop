@@ -10,14 +10,13 @@ Para este curso, faremos um projeto de uma **biblioteca** orientada a objetos. A
 
 Abaixo se encontra o sumário do nosso curso.
 
-1. Introdução ao Java
-2. Introdução a POO
-3. Encapsulamento
-4. Herança
-5. Polimorfismo
-6. Classes abstratas
-7. Interfaces
-8. Tratamento de exceções
-9. Conclusão
+1. Introdução a POO
+2. Encapsulamento
+3. Herança
+4. Polimorfismo
+5. Classes abstratas
+6. Interfaces
+7. Tratamento de exceções
+8. Conclusão
 
 Parafraseando o lema do Java: **aprenda uma vez, e execute em qualquer lugar!**

@@ -1,4 +1,4 @@
-# Capítulo 6 - Classes Abstratas
+# Capítulo 5 - Classes Abstratas
 
 Vimos que o polimorfismo pode sobrecarregar métodos já existentes, no capítulo anterior. No entanto, existe ainda uma outra sofisticação em termos de herança e polimorfismo, que permite que definamos métodos sem comportamento prévio, para serem sobrecarregados nas subclasses. Chamamos isso de **classes abstratas**.
 

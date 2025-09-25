@@ -1,4 +1,4 @@
-# Capítulo 4 - Herança
+# Capítulo 3 - Herança
 
 Muito bem, já vimos até agora dois dos quatro pilares da POO! Agora, vamos para um dos pilares que tornam esse paradigma tão especial e, ao mesmo tempo, lhe causa mais problemas: o pilar de herança.
 
@@ -8,13 +8,13 @@ O presente capítulo está estruturado da seguinte forma:
 2. Estendendo classes
 3. Problemas
 
-## 4.1 Introdução
+## 3.1 Introdução
 
 O pilar de herança é um dos pontos principais da POO que permite a reutilização de código. Vimos que, na programação procedural, se definimos tipos similares, precisaríamos repetir quase todo o código escrito para o primeiro na definição do segundo. Buscar evitar essa repetição, a POO oferece a solução através de *subclasses* (ou classes-filhas) e *superclasses* (ou classes-mãe).
 
 > Utilizaremos a nomenclatura "subclasse" e "superclasse" ao longo deste curso.
 
-## 4.2 Estendendo classes
+## 3.2 Estendendo classes
 
 Vamos definir um tipo "genérico" chamado `Veiculo`. Um veículo pode ligar, desligar, acelerar e frear.
 
@@ -137,7 +137,7 @@ carro2.abaixarJanelas(); // correto
 
 Veremos mais sobre o compartilhamento e até como sobrescrever métodos e atributos de uma superclasse no próximo capítulo. Por enquanto, tente criar uma superclasse `Documento` com alguns atributos e pense em subclasses como `Alvara`, `CertidaoNascimento`, `CertidaoCasamento` como elas seriam.
 
-## 4.3 Problemas
+## 3.3 Problemas
 
 Herança é um dos principais pontos fortes da POO, mas ao mesmo tempo, é um dos seus pontos mais fracos. O próprio criador do Java, o cientista James Gosling, disse certa vez que, se não fosse pela pressão comercial, teria lançado o Java sem herança, já que a linguagem possui alguns truques para evitar os problemas que este pilar traz consigo.
 
