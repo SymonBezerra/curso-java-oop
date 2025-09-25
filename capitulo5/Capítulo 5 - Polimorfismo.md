@@ -121,6 +121,6 @@ public class Carro extends Veiculo {
 
 ## 5.3 Alternativas avançadas
 
-Apenas a sobrecarga de métodos não funciona. Em teoria, poderíamos passar um método vazio, mas isso não seria suficiente: alguém poderia simplesmente esquecer de sobrecarregá-lo. Talvez precisemos de algo mais... *abstrato* ainda. É aí que entram as *abstract base class* (classes abstratas de base), ou ABC. Veremos mais sobre elas no próximo capítulo.
+Apenas a sobrecarga de métodos não funciona. Em teoria, poderíamos passar um método vazio, mas isso não seria suficiente: alguém poderia simplesmente esquecer de sobrecarregá-lo. Talvez precisemos de algo mais... *abstrato* ainda. É aí que entram as *abstract base class* (classes abstratas de base), ou ABCs. Veremos mais sobre elas no próximo capítulo.
 
 ## Exercícios

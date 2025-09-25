@@ -5,6 +5,7 @@ Muito bem, você concluiu os seus primeiros passos na linguagem Java. Você apre
 1. Introdução
 2. Os Quatro Pilares
 3. Abstração
+4. Métodos e atributos estáticos
 
 ## 2.1 Introdução
 
@@ -135,6 +136,40 @@ public class Carro { // esta é a definição de `Carro`, a CLASSE
 > Ainda sobre o `this`: no Java, `this` é, na maioria dos casos, **opcional**. Por exemplo, no exemplo do método `printAno`, não seria necessário usar `this.anoFabricacao`. Ele é apenas obrigatório quando há ambiguidade, ou seja, quando chamamos um método com argumentos de nomes iguais aos atributos, como no caso do construtor que definimos, onde há uma variável do método de mesmo nome para cada atributo. Para evitar o uso de `this`, poderíamos usar outros nomes para os argumentos do construtor.
 
 Tudo o que vimos até agora define também o conceito do pilar de Abstração da POO: abstrair significa criar unidades reutilizáveis de código cuja definição não precisa ser conhecida a fundo para ser utilizada (o que muitas vezes é necessário no mundo procedural). Como primeiro exercício, experimente criar agora um tipo `Carta` (carta de baralho), tente definir seus atributos, seu construtor e um método `mostrarCarta`.
+
+## 2.4 Métodos e atributos estáticos
+
+Agora que falamos sobre métodos e atributos, isto é, funções e variáveis que pertencem aos objetos, podemos finalmente responder a uma pergunta: o que significa o modificador `static`, do `public static void main`? Bom, `void main` é a definição da função. A palavra `public` será explicada no capítulo seguinte, sobre encapsulamento.
+
+Quando definimos um método ou atributo estático, ele não pertence ao objeto, mas sim à classe; pertence ao tipo, e não às instâncias. Vejamos um exemplo mais claro com uma classe `Carta` (carta de baralho):
+
+```java
+public class Carta {
+    public static String marca = "Copag"; // este curso não é patrocinado, mas bem que poderia
+
+    public String naipe;
+    public String valor;
+
+    public Carta(String naipe, String valor) {
+        this.naipe = naipe;
+        this.valor = valor;
+    }
+
+    public static void imprimeMarca() {
+        System.out.println("Cartas da Copag ©");
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Carta.marca); // "Copag";
+        System.out.println(Carta.imprimeMarca()); // "Cartas da Copag ©"
+        Carta c = new Carta("Espadas", "Ás");
+        System.out.println(c.marca); // não compila, pois o método é estático
+        System.out.println(c.imprimeMarca()); // não compila, pois o método é estático
+    }
+}
+```
+
+O atributo `marca` pertence ao tipo `Carta` em si, e não pode ser invocado por nenhuma instância de `Carta`. Podemos utilizar atributos e métodos estáticos quando precisamos de funções e variáveis que não pertençam a nenhuma instância em si, mas sim ao tipo como um todo. Porém, precisamos ter moderação ao usar métodos estáticos, ou recaíremos em uma programação puramente procedural.
 
 ## Bônus: o tipo *enum*
 

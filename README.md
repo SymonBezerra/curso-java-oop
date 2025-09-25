@@ -6,7 +6,6 @@ O curso está estruturado em capítulos, cada um contando com exemplos de códig
 
 Uma observação importante é que todos os exemplos relacionados a ambientes de desenvolvimento (IDEs) se referem à extensão Java feita pela RedHat para Visual Studio Code.
 
-
 Para este curso, faremos um projeto de uma **biblioteca** orientada a objetos. Ao longo de cada capítulo, teremos exemplos de código que nos ajudarão a construir a nossa biblioteca ao final do curso.
 
 Abaixo se encontra o sumário do nosso curso.
